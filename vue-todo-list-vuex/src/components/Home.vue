@@ -6,9 +6,9 @@
 
     <router-link to="/">Hello</router-link>
     <br />
-    <router-link :to="'/Home/'+userName+'/ToDoList'">CounterGroup</router-link>
+    <router-link :to="'/Home/'+userName+'/TodoList'">ToDoList列表</router-link>
     <br />
-    <router-link :to="'/Home/'+userName+'/Gototodo'">go to todo</router-link>
+    <router-link :to="'/Home/'+userName+'/My'">我的</router-link>
 
     <router-view></router-view>
   </div>

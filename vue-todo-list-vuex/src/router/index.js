@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '../components/Main.vue'
-import Home from '../components/Home'
+import Home from '../components/Home.vue'
+import TodoList from '../components/TodoList.vue'
+import My from '../components/My.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -13,7 +16,15 @@ export default new Router({
         {
             path: '/Home/:userName',
             component: Home,
-            props:true,
+            props: true,
+            children: [{
+                path: 'TodoList',
+                component: TodoList
+            },
+            {
+                path: 'My',
+                component: My
+            }]
         }
 
     ]
