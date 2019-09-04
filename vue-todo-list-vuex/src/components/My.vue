@@ -1,5 +1,7 @@
 <template>
   <div>
-    <h1>头像、姓名、电话</h1>
+    <img src="../assets/logo.jpg">
+    <p>姓名:小辉辉</p>
+    <p>电话：110</p>
   </div>
 </template>

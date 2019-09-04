@@ -17,14 +17,21 @@ export default new Router({
             path: '/Home/:userName',
             component: Home,
             props: true,
-            children: [{
-                path: 'TodoList',
-                component: TodoList
-            },
-            {
-                path: 'My',
-                component: My
-            }]
+            children: [
+                {
+                    path: '',
+                    redirectTo: 'TodoList',
+                    pathMatch: 'full'
+                },
+                {
+                    path: 'TodoList',
+                    component: TodoList
+                },
+                {
+                    path: 'My',
+                    component: My
+                }
+            ]
         }
 
     ]
