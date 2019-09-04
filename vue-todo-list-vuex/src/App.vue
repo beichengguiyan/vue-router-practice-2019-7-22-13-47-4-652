@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h2>
+    <!-- <h2>
       Vue To Do List
       Simple Todo List with adding and filter by diff status.
     </h2>
@@ -8,7 +8,9 @@
     <CreateForm />
     <UpdateForm />
     <TodoList />
-    <TodoListFilter />
+    <TodoListFilter />-->
+
+    <router-view></router-view>
   </div>
 </template>
 
